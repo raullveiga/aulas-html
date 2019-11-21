@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        .texto {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: black">
+    <form action="formulario">
+        <h1 class="texto" style="font-style:oblique"><strong>Formulário</strong></h1>
+        <div>
+            <ol>
+                <div style="background-color: rgb(5, 5, 5); width: 400px;">
+                    <div>
+                        <li>
+                            <label class="texto" for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required autofocus placeholder="Seu nome aqui">
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <label class="texto" for="ende">Endereço</label>
+                            <input type="text" name="ende" id="ende" required placeholder="Seu Endereço aqui">
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <label class="texto" for="nome">Telefone</label>
+                            <input type="tel" name="tel" id="tel" required placeholder="Seu telefone aqui">
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <label class="texto" for="nome">Email</label>
+                            <input type="email" name="email" id="email" required placeholder="Seu e-mail aqui">
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <label class="texto" for="nome">Informações pessoais</label>
+                            <textarea rows="4" cols="50" placeholder="Escreva uma breve biografia"></textarea>
+                        </li>
+                    </div>
+                </div>
+                <figure>
+                    <img src="fred.jfif" alt="Fred" style="height:200px;width:200px;">
+                </figure>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reset">
+            </ol>
+            <ul style="color: aqua">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <dd>
+
+            </dd>
+        </div>
+    </form>
+</body>
+
+</html>
