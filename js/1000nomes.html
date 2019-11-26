@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="1000nomes.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="click1()">click</button>
+    <button onclick="click2()">click</button>
+    <button onclick="click3()">click</button>
+    <input type="text" id="batata" ></input>
+    <script>
+
+        var n = document.getElementById("batata").value;
+        var v = Number(n);
+        var nomes = createNames(v);
+        // writeNames(nomes);
+
+        var i = 0;
+        var txt = names2txt(nomes);
+        var speed = 1; /* The speed/duration of the effect in milliseconds */
+
+   
+        function click2(){
+            typeWriter(txt); 
+        }
+        
+        
+        </script>
+</body>
+
+</html>
