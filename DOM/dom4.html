@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p >muda </p>
+    <p2 id="p2"></p2>
+    <button style="top: 200px; position: absolute;" onclick="troca()">TROCA</button>
+    
+
+    <script>
+        var trocou = false;
+        function troca() {
+            if (!trocou) {
+                document.getElementsByTagName("p")[0].style = "color: red; font-size: 50px";
+                document.getElementById("p2").innerHTML = "meu pudou";
+                // document.getElementsByTagName("body")[0].style = "background-color: green"
+                document.body.style.backgroundImage = "url('http://shorturl.at/gqKLV')";
+
+                trocou = true;
+            }
+            else {
+                document.getElementsByTagName("p")[0].style = "";
+                document.getElementsByTagName("body")[0].style = "";
+                trocou = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

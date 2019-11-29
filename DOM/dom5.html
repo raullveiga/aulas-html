@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    First name:<input value="fred"> <br>
+    Last name:<input value="ico"> <br>
+
+    <button onclick="alerta()">Click me!</button>
+
+    <script>
+        function alerta() {
+            var i1 = document.getElementsByTagName("input")[0];
+            var i2 = document.getElementsByTagName("input")[1];
+            alert(`${i1.value} ${i2.value}`)
+        }
+    </script>
+</body>
+</html>

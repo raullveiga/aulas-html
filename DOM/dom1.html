@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input id="nome" type="text" name="nome" value="" placeholder="Seu Nome" />
+
+    <button id="btn"onclick="pegarNome()">Ok</button>
+
+    <p id="resposta"></p>
+
+    <script>
+        function pegarNome() {
+            //Pega o valor do input 
+            var x = document.getElementById("nome").value;
+
+            //Injeta o valor no paragrafo com id 'resposta'
+            document.getElementById("resposta").innerHTML = x;
+        }
+
+        // Get the input field
+        var input = document.getElementById("nome");
+
+        // Execute a function when the user releases a key on the keyboard
+        input.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                document.getElementById("btn").click();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
