@@ -13,6 +13,7 @@ function draw() {
         // else
         //     fill(255);
         // noStroke();
+            
     }
     background(51);
     system.addParticle();
